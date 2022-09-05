@@ -17,6 +17,7 @@ public class UserRegistrationDemo {
 	public WebDriver driver;
 
 	// Parameterizing all WebElement paths
+	// To check the cicd
 
 	String titleLocator = "//*[text()='Register For Demo']";
 	String firstNameLocator = "vfb-5";
