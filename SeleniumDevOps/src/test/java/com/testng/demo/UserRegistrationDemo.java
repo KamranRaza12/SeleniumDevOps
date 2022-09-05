@@ -17,7 +17,7 @@ public class UserRegistrationDemo {
 	public WebDriver driver;
 
 	// Parameterizing all WebElement paths
-	// To check the cicd
+	
 
 	String titleLocator = "//*[text()='Register For Demo']";
 	String firstNameLocator = "vfb-5";
@@ -64,7 +64,7 @@ public class UserRegistrationDemo {
 	String yourQueryValue = "What about automation testing?";
 
 	// Declaring all expected values
-	//
+	
 	String expectedTitle = "Register For Demo";
 	String expectedSuccessMsg = "Registration Form is Successfully Submitted.";
 
