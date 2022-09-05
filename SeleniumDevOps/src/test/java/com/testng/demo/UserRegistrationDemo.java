@@ -64,7 +64,7 @@ public class UserRegistrationDemo {
 	String yourQueryValue = "What about automation testing?";
 
 	// Declaring all expected values
-
+	//
 	String expectedTitle = "Register For Demo";
 	String expectedSuccessMsg = "Registration Form is Successfully Submitted.";
 
