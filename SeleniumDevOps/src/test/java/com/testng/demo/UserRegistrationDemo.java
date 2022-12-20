@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
@@ -64,7 +65,7 @@ public class UserRegistrationDemo {
 	String yourQueryValue = "What about automation testing?";
 
 	// Declaring all expected values
-	
+
 	String expectedTitle = "Register For Demo";
 	String expectedSuccessMsg = "Registration Form is Successfully Submitted.";
 
@@ -72,10 +73,12 @@ public class UserRegistrationDemo {
 	public void launchApplication() {
 
 		// Setting system property for Chrome driver
-		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
-
-		// Creating instance of Chrome driver
-		driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+         System.setProperty("webdriver.gecko.driver", ".\\Drivers\\geckodriver.exe");
+		
+         // Creating instance of Chrome driver
+		//driver = new ChromeDriver();
+         driver = new FirefoxDriver();
 
 		// Launching the URL
 		driver.get(url);
